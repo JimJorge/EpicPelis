@@ -26,7 +26,7 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 text-decoration:none">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 text-decoration:none">Inicio</a>
                     @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 text-decoration:none ">Ingresar </a>
 
@@ -36,13 +36,13 @@
                     @endauth
                 </div>
             @endif
-
+            <!-- Imagen para la bienvenida-->
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                     <img src="https://i.ibb.co/3vYZScK/Epic-Pelis.png" alt="Epic-Pelis" width="850px" height="650px">
                 </div>
 
-
+                    <!--Texto para los derechos de la plataforma -->
                     <div class="ml-4 text-center text-sm text-gray-500 sm:ml-0 2xl:focus-within:text-yellow-500">
                         <span class="text-center">Derechos reservados para &copy;EpicPelis</span>
                     </div>

@@ -12,6 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+        <!-- Estilo para las peliculas-->
         <style>
             h5{
                 display: inline-block;
@@ -276,7 +277,7 @@
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')
 
-            <!-- Page Heading -->
+            <!-- Encabezado de página -->
             @if (isset($header))
                 <header class="bg-white shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
@@ -285,7 +286,7 @@
                 </header>
             @endif
 
-            <!-- Page Content -->
+            <!-- Contenido de página -->
             <main>
                 {{ $slot }}
             </main>

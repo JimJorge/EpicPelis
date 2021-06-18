@@ -31,6 +31,7 @@ class RegisteredUserController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
+    //Funcion para la validacion y creacion de usuarios hacia la base de datos
     public function store(Request $request)
     {
         $request->validate([

@@ -1,17 +1,18 @@
 <x-guest-layout>
     <x-jet-authentication-card>
+        <!-- Logo para el login -->
         <x-slot name="logo">
             <img src="https://i.ibb.co/CmWZvGm/Logo-Epic-Pelis.png">
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
-
+        <!-- Estado de la sesion del usuario-->
         @if (session('status'))
             <div class="mb-4 font-medium text-sm text-green-600">
                 {{ session('status') }}
             </div>
         @endif
-
+        <!-- Login de usuario-->
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
@@ -31,7 +32,6 @@
                         Recuperar contraseña
                     </a>
                 @endif
-
                 <x-jet-button class="ml-4">
                     Ingresar
                 </x-jet-button>
